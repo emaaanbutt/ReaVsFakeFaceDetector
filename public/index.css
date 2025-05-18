@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    background-color: pink;
+    gap: 1rem;
+    padding: 5rem;
+}
+
+label{
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+input{
+    padding-top: 2rem;
+    font-size: 1.5rem;
+}
+
+button{
+    margin-top: 3rem;
+    width: 6rem;
+    height: 2rem;
+    border-radius: 15px;
+    background-color: palevioletred;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+#prediction-cont{
+    display: flex;
+    margin-top: 2rem;
+    font-size: 2rem;
+}

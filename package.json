@@ -1,0 +1,28 @@
+{
+  "name": "real-vs-fake-face-detector",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emaaanbutt/ReaVsFakeFaceDetector.git"
+  },
+  "author": "Eman B.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emaaanbutt/ReaVsFakeFaceDetector/issues"
+  },
+  "homepage": "https://github.com/emaaanbutt/ReaVsFakeFaceDetector#readme",
+  "description": "",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "multer": "^1.4.5-lts.2"
+  }
+}

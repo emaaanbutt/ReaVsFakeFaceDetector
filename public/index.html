@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real vs Fake Face Detection</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./index.js"></script>
+</head>
+<body>
+    <form action="/predict" method="post" enctype="multipart/form-data">
+        <label for="image">Upload a face</label>
+        <input type="file" name="image" id="uploaded-img" required>
+        <button type="submit">Submit</button>
+        <div id="prediction-cont">
+            Prediction :&nbsp;
+            <div id="prediction">
+                fake
+            </div>
+        </div>
+    </form>
+</body>
+</html>
