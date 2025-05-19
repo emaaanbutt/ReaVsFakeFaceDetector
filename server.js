@@ -38,7 +38,7 @@ app.post('/predict', upload.single('image'), (req, res) => {
   const imagePath = req.file.path;
 
   // Run your python script and pass the image path to it
-  const pythonProcess = spawn('python3', ['predict.py', imagePath]);
+  const pythonProcess = spawn('python', ['predict.py', imagePath]);
 
   let prediction = '';
 

@@ -1,9 +1,13 @@
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
+
 import sys
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 import numpy as np
 
-model = load_model("real-vs_-fake-model.h5")
+
+model = load_model("real-vs-fake-model.h5")
 
 img_path = sys.argv[1]
 img = image.load_img(img_path, target_size=(128, 128))

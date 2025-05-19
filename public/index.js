@@ -1,26 +1,20 @@
-import { error } from "console";
+$("form").on("submit", function(e){
+    e.preventDefault();
 
-$(function(){
-    $("form").on("submit", function(e){
-        e.preventDefault();
+    const formData = new FormData(this);
+    $("#prediction").text("Predicting...").show();
 
-        const formData = new FormData(this);
-
-        $.ajax({
-            url: '/predict',
-            method: 'POST',
-            data: formData,
-            contentType: false,
-            processData: false,
-            success: function(response){
-                $("#prediction").remove();
-
-                $("#prediction").text(response.prediction);
-            },
-            error: function(){
-                $("#prediction").remove();
-                 $("#prediction").text("Error fetching predictions.");
-            }
-        });
+    $.ajax({
+        url: '/predict',
+        method: 'POST',
+        data: formData,
+        contentType: false,
+        processData: false,
+        success: function(response){
+            $("#prediction").text(response.prediction).show();
+        },
+        error: function(){
+            $("#prediction").text("Error fetching predictions.").show();
+        }
     });
 });

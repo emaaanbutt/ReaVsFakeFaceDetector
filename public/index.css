@@ -7,6 +7,18 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-image: url('/Images/bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: rgb(6, 6, 92);
+}
+
+h1{
+    font-size: 3.5rem;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 0rem;
+    color: white;
 }
 
 form{
@@ -31,9 +43,10 @@ input{
 
 button{
     margin-top: 3rem;
-    width: 6rem;
-    height: 2rem;
+    width: 8rem;
+    height: 3rem;
     border-radius: 15px;
+    font-size: 1.5rem;
     background-color: palevioletred;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
 }
