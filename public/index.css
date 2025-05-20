@@ -60,3 +60,7 @@ button:hover{
     margin-top: 2rem;
     font-size: 2rem;
 }
+
+#warning{
+    font-size: 1rem;
+}

@@ -1,4 +1,5 @@
 $(function(){
+    $("#warning").hide();
     $("form").on("submit", function(e){
     e.preventDefault();
 
@@ -13,6 +14,7 @@ $(function(){
         processData: false,
         success: function(response){
             $("#prediction").text(response.prediction).show();
+            $("#warning").show();
         },
         error: function(){
             $("#prediction").text("Error fetching predictions.").show();
