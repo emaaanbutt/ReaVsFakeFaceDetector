@@ -1,4 +1,5 @@
-$("form").on("submit", function(e){
+$(function(){
+    $("form").on("submit", function(e){
     e.preventDefault();
 
     const formData = new FormData(this);
@@ -18,3 +19,6 @@ $("form").on("submit", function(e){
         }
     });
 });
+
+});
+
