@@ -95,7 +95,10 @@ Prediction: Fake (78.23%)
 
 ## 📸 Screenshot
 
-_You can add a screenshot here to show how your frontend looks._
+
+<img src="/preview/preview1.png" alt="Screenshot" height="350" width="500">
+<img src="/preview/preview2.png" alt="Screenshot" height="350" width="500">
+<img src="/preview/preview3.png" alt="Screenshot" height="350" width="500">
 
 ---
 
